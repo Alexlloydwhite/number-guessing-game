@@ -11,6 +11,37 @@
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>YOUR GAME HERE!</h1>
+    <header>
+      <h1>Random Number Guessing Game</h1>
+    </header>
+    
+    <main>
+      
+      <section>
+        <input id="guess1" type="text" placeholder="Player 1 Guess" />
+        <input id="guess2" type="text" placeholder="Player 2 Guess" />
+        <button id="submitGuess">Submit Guess</button>
+        <div id="restartButton"><!-- jQuery goes here --></div>
+      </section>
+      
+      <section>
+        <div id="totalGuess">Total Guesses Made: <span id="totalGuessOut">0</span></div>
+        
+        <div>
+          <ul id ="history">
+              <!-- jQuery goes here -->
+          </ul>
+        </div>
+      </section>
+    
+    </main>
+    
+<!-- - an input field for each of the Players to make a guess
+- a submit guesses button (submits all guesses at the same time)
+- total guesses made indicator (think of this as rounds in a game)
+- details area for the history of guesses for each player (tell them if their last guess was too low or too high)
+- if a guess is correct PROMINENTLY Display which player won (make 'em FEEL it)
+- if there is a winner, a restart button that tells the server to select a new random number (POST) -->
+
 </body>
 </html>

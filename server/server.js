@@ -11,6 +11,11 @@ app.use(express.static('server/public'));
 
 // GET & POST Routes go here
 
+let randomNumber = (min,max) => {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+console.log('random number:', randomNumber(1,25));
 
 app.listen(PORT, () => {
   console.log ('Server is running on port', PORT)
